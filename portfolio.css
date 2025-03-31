@@ -16,7 +16,7 @@ body {
     color: var(--text-color);
 }
 
-/* Welcome Screen */
+
 .welcome-screen {
     position: fixed;
     width: 100%;
@@ -30,7 +30,7 @@ body {
     z-index: 1000;
 }
 
-/* Navigation Bar */
+
 header {
     background-color: transparent;
     padding: 1rem 2rem;
@@ -80,7 +80,7 @@ nav ul li a:hover {
     display: none;
 }
 
-/* Welcome Content */
+
 .welcome-content {
     flex: 1;
     display: flex;
@@ -103,7 +103,7 @@ nav ul li a:hover {
     margin-bottom: 2rem;
 }
 
-/* Scroll Indicator */
+
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
@@ -116,7 +116,7 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Hero Section */
+
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -166,7 +166,7 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Profile Section */
+
 .profile {
     flex: 1;
     display: flex;
@@ -207,7 +207,7 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-/* About Section */
+
 .about-section {
     padding: 5rem 5%;
     background: #f3f4f6;
@@ -238,7 +238,7 @@ nav ul li a:hover {
     text-align: justify;
 }
 
-/* Skills Section */
+
 .skills-section {
     padding: 5rem 5%;
     text-align: center;
@@ -275,13 +275,13 @@ nav ul li a:hover {
     color: var(--primary-color);
 }
 
-/* Remove progress bar styles */
+
 .progress-bar,
 .progress {
     display: none;
 }
 
-/* Projects Section */
+
 .projects-section {
     padding: 5rem 5%;
     background: #f3f4f6;
@@ -311,7 +311,7 @@ nav ul li a:hover {
     width: 100%;
 }
 
-/* Remove hover effect */
+
 .project-card:hover {
     transform: none;
 }
@@ -355,7 +355,7 @@ nav ul li a:hover {
     font-size: 0.9rem;
 }
 
-/* Contact Section */
+
 .contact-section {
     padding: 5rem 5%;
     text-align: center;
@@ -385,7 +385,7 @@ nav ul li a:hover {
     font-size: 1.2rem;
 }
 
-/* Footer */
+
 footer {
     background: var(--text-color);
     color: white;
@@ -398,12 +398,12 @@ footer {
     text-align: center;
 }
 
-/* Hide welcome screen when scrolled */
+
 .welcome-screen.hidden {
     display: none;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .welcome-content h1 {
         font-size: 2.5rem;

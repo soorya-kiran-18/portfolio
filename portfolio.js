@@ -1,23 +1,23 @@
-// Welcome Screen
+
 document.addEventListener('DOMContentLoaded', () => {
     const welcomeScreen = document.querySelector('.welcome-screen');
     const header = document.querySelector('header');
     const menuBtn = document.querySelector('.menu-btn');
     const nav = document.querySelector('nav ul');
 
-    // Handle scroll events
+
     let lastScroll = 0;
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
 
-        // Add/remove scrolled class to header
+
         if (currentScroll > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
 
-        // Hide welcome screen when scrolling down
+
         if (currentScroll > 100) {
             welcomeScreen.classList.add('hidden');
         } else {
@@ -27,19 +27,19 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScroll = currentScroll;
     });
 
-    // Mobile menu toggle
+
     menuBtn.addEventListener('click', () => {
         nav.classList.toggle('show');
     });
 
-    // Close mobile menu when clicking outside
+
     document.addEventListener('click', (e) => {
         if (!nav.contains(e.target) && !menuBtn.contains(e.target)) {
             nav.classList.remove('show');
         }
     });
 
-    // Smooth scrolling for navigation links
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Animate skill bars when they come into view
+
     const skillBars = document.querySelectorAll('.progress');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(bar);
     });
 
-    // Add scroll-based animations
+
     const animateOnScroll = () => {
         const elements = document.querySelectorAll('.fade-in');
         elements.forEach(element => {
@@ -84,5 +84,5 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // Initial check
+    animateOnScroll(); 
 });
